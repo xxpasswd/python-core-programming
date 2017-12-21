@@ -128,7 +128,7 @@ class Llist(object):
     def printall(self):
         p = self._head
         while p is not None:
-            print p.elem
+            print(p.elem)
             p=p.next
 
 #含有尾指针
@@ -241,7 +241,7 @@ class LClist(object):
             return
 
         while True:
-            print p.elem
+            print(p.elem)
             if p is self._rear:
                 break
             p = p.next
@@ -251,30 +251,30 @@ class LClist(object):
 
 # 测试部分
 def fun(Llist):
-    print "Creat an empty linked list and dispaly it's elements"
+    print("Creat an empty linked list and dispaly it's elements")
     mylist = Llist()
     mylist.printall()
 
-    print "add 5 elements to list"
+    print("add 5 elements to list")
     for i in range(5):
         mylist.append(i)
     mylist.printall()
 
-    print "pop first elements"
+    print("pop first elements")
     mylist.pop()
     mylist.printall()
 
-    print "pop last elements"
+    print("pop last elements")
     mylist.pop_last()
     mylist.printall()
 
-    print "add an elements on first place"
+    print("add an elements on first place")
     mylist.prepend(9)
     mylist.printall()
 
     return mylist
-# print "find 3"
-# print mylist.find(9)
+# print("find 3")
+# print(mylist.find(9))
 # mylist.delete(9)
 # mylist.printall()
 
@@ -284,8 +284,8 @@ def fun(Llist):
 
 aa = fun(Llist)
 aa.rev()
-print
+print()
 aa.printall()
-print
+print()
 aa.sort2()
 aa.printall()

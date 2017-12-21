@@ -41,7 +41,7 @@ def tsp():
                 short.append(i+short[0][0])
                 break
 
-        print short,sum(distance[x] for x in short)
+        print(short,sum(distance[x] for x in short))
 
 
 # 递归求全排列
@@ -61,13 +61,13 @@ def full_permutation(s):
     if len(s)==1:
         tmp = full
         full = full + s[0]
-        print full,count
+        print(full,count)
         count += 1
         full = tmp
 
 def full_permutation2(s,begin,end):
     if begin >= end:
-        print s
+        print(s)
     else:
         num = begin
         for i in range(begin,end):
@@ -101,7 +101,7 @@ def all(string,n):
     else:
         for i in string:
             tmp = allperm
-            print m,
-            print allperm+i
+            print(m,)
+            print(allperm+i)
             m += 1
             allperm = tmp

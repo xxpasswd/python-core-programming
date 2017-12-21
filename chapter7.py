@@ -6,18 +6,18 @@ import random
 def dict_sort():
     dictionary = dict(zip(('w','x','a','f','g'),(1,2,3,4,5,)))
 
-    print "按顺序打印键"
+    print("按顺序打印键")
     for i in sorted(dictionary):
-        print i
+        print(i)
 
-    print "按键顺序打印键和键值"
+    print("按键顺序打印键和键值")
     for i in sorted(dictionary):
-        print i,dictionary[i]
+        print(i,dictionary[i])
 
-    print "按值顺序打印键和值"
+    print("按值顺序打印键和值")
     dic = sorted(dictionary.items(),key=lambda d:d[1])
     for i,j in dic:
-        print i,j
+        print(i,j)
 
 # 7-4
 def creat_dict():
@@ -26,7 +26,7 @@ def creat_dict():
     dic = {}
     for i in range(len(list1)):
         dic[list1[i]]=list2[i]
-    print dic
+    print(dic)
 
 
 # 7-6
@@ -34,32 +34,32 @@ def stock():
     all = []
     all_dict = {}
     while True:
-        data = raw_input("Input your data:  ").split()
+        data = input("Input your data:  ").split()
         if data:
             all.append(data)
         else:
             break
 
-    column = int(raw_input("Enter a main column "))
+    column = int(input("Enter a main column "))
     for i in all:
         all_dict[i[column-1]] = i[:column-1]+i[column:]
 
     keys = all_dict.keys()
 
     for i in sorted(keys):
-        print i,all_dict[i]
+        print(i,all_dict[i])
 
 # 7-7
 def reverse_dict():
     dictionary = {2:'a',3:'d',1:'c',5:'y'}
     reverse_dict = {d[1]:d[0] for d in dictionary.items()}
-    print reverse_dict
+    print(reverse_dict)
 
 # 7-8
 def employee():
     all = {}
     while True:
-        data = raw_input("Inpur employee name and number  ").split()
+        data = input("Inpur employee name and number  ").split()
         if data:
             all[data[0]] = data[1]
         else:
@@ -68,14 +68,14 @@ def employee():
 
 def showmenu():
     all = employee()
-    key = raw_input("1.按照姓名输出，2.按照编号输出  ")
+    key = input("1.按照姓名输出，2.按照编号输出  ")
     if key == '1':
         for i in sorted(all):
-            print i,all[i]
+            print(i,all[i])
     else:
         all2 = sorted(all.items(),key=lambda k:k[1])
         for i,j in all2:
-            print j,i
+            print(j,i)
 
 # 7-9
 def tr(srcstr,desstr,string):
@@ -91,7 +91,7 @@ def tr(srcstr,desstr,string):
             my_string.append(i)
 
     my_string = [i for i in my_string if i]
-    print ''.join(my_string)
+    print(''.join(my_string))
 
 # 7-10
 def rot13():
@@ -102,7 +102,7 @@ def rot13():
     upper_string2 = {chr(x):chr(x+13) for x in range(65,78)}
     upper_string.update(upper_string2)
 
-    sentence = raw_input("Enter an sentence ")
+    sentence = input("Enter an sentence ")
     rot13_sentence = []
     for i in sentence:
         if i in low_string:
@@ -112,7 +112,7 @@ def rot13():
         else:
             rot13_sentence.append(i)
 
-    print ''.join(rot13_sentence)
+    print(''.join(rot13_sentence))
 
 # 7-13 7-14
 def rand_set():
@@ -125,18 +125,18 @@ def rand_set():
         tmp.append(random.randint(0,9))
     B = set(tmp)
 
-    print "A",A
-    print "B",B
-    ans = raw_input("Input your answer for A|B  ").split()
+    print("A",A)
+    print("B",B)
+    ans = input("Input your answer for A|B  ").split()
     ans = set(map(int,ans))
-    print ans
+    print(ans)
     if ans == A|B:
-        print "good,you are right"
-    print "A|B",A|B
-    print "A&B",A&B
-    print "A-B",A-B
-    print "B-A",B-A
-    print "A^B",A^B
+        print("good,you are right")
+    print("A|B",A|B)
+    print("A&B",A&B)
+    print("A-B",A-B)
+    print("B-A",B-A)
+    print("A^B",A^B)
 
 
 
