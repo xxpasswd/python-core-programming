@@ -1,7 +1,7 @@
 import logging
 
 logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s %(pathname)s\n %(filename)s [line:%(lineno)s] %(levelname)s %(message)s',
+                    format='%(asctime)s %(pathname)s %(filename)s [line:%(lineno)s] %(levelname)s %(message)s',
                     filename='/tmp/test.log',
                     filemode='w')
 
