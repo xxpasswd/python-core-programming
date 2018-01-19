@@ -17,8 +17,8 @@ def get_screen():
     获取屏幕截图
     '''
 
-    subprocess.run('adb shell screencap -p /sdcard/auto.png',shell=True)
-    subprocess.run('adb pull /sdcard/auto.png',shell=True)
+    subprocess.run('adb shell screencap -p > auto.png',shell=True)
+    # subprocess.run('adb pull /sdcard/auto.png',shell=True)
     # 返回图片数据
     return numpy.array(PIL.Image.open('auto.png'))
 
@@ -81,4 +81,5 @@ def run():
 
 
 if __name__ == '__main__':
+    print("脚本正在运行...")
     run()
