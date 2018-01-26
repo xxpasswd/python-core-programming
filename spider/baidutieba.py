@@ -1,18 +1,21 @@
+'''
+爬取百度贴吧python吧的帖子：标题，作者，链接，回复数量
+
+要用到的元素：
+    1.标题和标题链接
+    <a rel="noreferrer" href="/p/5513330904" title="刚整理的2018全新Python学习资料，直接进来拿走！" target="_blank" class="j_th_tit ">刚整理的2018全新Python学习资料，直接进来拿走！</a>
+    2.作者
+    <a rel="noreferrer" data-field="{&quot;un&quot;:&quot;wu4fo0&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=wu4fo0&amp;ie=utf-8&amp;fr=frs" target="_blank">wu4fo0</a>
+    3.回复数量
+    <div class="col2_left j_threadlist_li_left">
+        <span class="threadlist_rep_num center_text" title="回复">0</span>
+    </div>
+
+'''
+
 import requests
-import time
 from bs4 import BeautifulSoup as b
 
-'''
-标题和标题链接
-<a rel="noreferrer" href="/p/5513330904" title="刚整理的2018全新Python学习资料，直接进来拿走！" target="_blank" class="j_th_tit ">刚整理的2018全新Python学习资料，直接进来拿走！</a>
-作者
-<a rel="noreferrer" data-field="{&quot;un&quot;:&quot;wu4fo0&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=wu4fo0&amp;ie=utf-8&amp;fr=frs" target="_blank">wu4fo0</a>
-回复数量
-<div class="col2_left j_threadlist_li_left">
-    <span class="threadlist_rep_num center_text" title="回复">0</span>
-</div>
-
-'''
 
 # 链接入口
 URL = "http://tieba.baidu.com/f?kw=python&ie=utf-8&pn="
