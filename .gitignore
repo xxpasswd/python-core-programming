@@ -3,3 +3,4 @@
 .DS_Store
 auto.png
 *.html
+__pycache__/

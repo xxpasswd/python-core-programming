@@ -105,3 +105,5 @@ def all(string,n):
             print(allperm+i)
             m += 1
             allperm = tmp
+
+full_permutation('abcde')
