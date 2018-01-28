@@ -1,0 +1,6 @@
+1. 安装redis: brew install redis
+2. 安装mitmproxy: pip install mitmproxy
+3. 安装mitmproxy证书，手机需要安装
+4. 设置手机代理
+5. 启动redis：redis-server
+6. 运行脚本 mitmproxy -p port -s brain_storm.py
