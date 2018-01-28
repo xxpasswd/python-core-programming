@@ -53,5 +53,5 @@ def get_answer(question,options):
 	for option in options:
 		count = content.count(option)
 		answer.append(option+"("+str(count)+")")
-		ans_count.append(count)
+		ans_count.append(int(count))
 	return answer,ans_count

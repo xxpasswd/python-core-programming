@@ -9,12 +9,13 @@ def auto_touch(op):
     '''
     自到寻找最优答案，选择答案
     '''
-    stand_answer = 3
-    max_count = 0
-    for i,j in enumerate(op):
-        if j > max_count:
-            max_count = j
-            stand_answer = i+1
+    # stand_answer = 3
+    # max_count = 0
+    # for i,j in enumerate(op):
+    #     if j > max_count:
+    #         max_count = j
+    #         stand_answer = i+1
+    stand_answer = op.index(max(op))+1
 
     click(stand_answer)
     
