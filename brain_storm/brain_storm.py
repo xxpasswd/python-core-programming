@@ -33,8 +33,8 @@ def response(flow):
 		data["data"]["options"] = options
 		flow.response.text = json.dumps(data)
 		job = q.enqueue(auto_touch,ans_count)
-	elif path == "/question/bat/fightResult":
-		q.enqueue(next_cycle)
+	# elif path == "/question/bat/fightResult":
+	# 	q.enqueue(next_cycle)
 		
 
 

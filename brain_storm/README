@@ -1,3 +1,5 @@
+原理说明：抓包获取数据，百度查询选项，统计出现的次数，返回次数最多的选项
+
 1. 安装redis: brew install redis
 2. 安装mitmproxy: pip install mitmproxy
 3. 安装mitmproxy证书，手机需要安装
