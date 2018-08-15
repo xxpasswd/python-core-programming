@@ -1,0 +1,11 @@
+程序结构
+-wxbot
+   |--api 第三发api
+   |    |--- __init__.py
+   |    |--- tuling.py
+   |
+   |-- wxbot 微信消息处理
+   |    |--- __init__.py
+   |    |--- process.py
+   |
+   |-- run.py 主程序
