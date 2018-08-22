@@ -14,17 +14,10 @@ class TuLing(object):
     def __init__(self):
         pass
 
-    def proccess_msg(self):
-        """
-        处理微信传过来的消息格式
-        :return:
-        """
-        pass
-
     def get_content(self, msg):
         """
         获取图灵回复的信息
-        :return:
+        :return: string
         """
         params = {
             "reqType": 0,

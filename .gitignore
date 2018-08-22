@@ -4,3 +4,6 @@
 auto.png
 *.html
 __pycache__/
+wxbot/video.db
+wxbot/*.png
+wxbot/*pkl

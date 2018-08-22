@@ -6,6 +6,7 @@ from itchat.content import *
 from wxbot.get_content import Bot
 
 
+# 群组@消息回复
 @itchat.msg_register(itchat.content.TEXT, isGroupChat=True)
 def text_reply(msg):
     if msg.isAt:
@@ -20,11 +21,11 @@ def print_content(msg):
     print(msg)
     print('\n')
     if msg['Type'] != 'Text':
-        r_text = "我的小脑瓜zi还不行，不想看图片，太费脑子了(〃'▽'〃)"
+        reply_text = "偶的小脑瓜zi还不行，不想看图片，太费脑子啦(〃'▽'〃)"
     else:
-        u_text = msg['Text']
-        r_text = Bot().get_content(u_text)
-    all_text = r_text + '\n\n（小哥哥莫要着急(～￣▽￣)～，更多功能还在开发中哦）'
+        received_text = msg['Text']
+        reply_text = Bot().get_content(received_text)
+    all_text = reply_text + '\n\n(～￣▽￣)～回复帮助，有更多功能'
     return all_text
 
 
