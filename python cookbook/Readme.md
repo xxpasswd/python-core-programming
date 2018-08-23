@@ -10,3 +10,9 @@
 6. 切片命名，代码意义更加清晰
 7. 找出一个序列中出现次数最多的元素，使用collections模块的Counter
 8. 通过某个关键字排序一个字典列表，sort函数中，key使用operator的itemgetter函数传值，也可以使用lambda表达式
+9. 根据关键字排序列表对象，sort函数中，key使用operator的attrgetter函数传值，也可以使用lambda表达式
+10. 过滤列表元素使用列表推导式或者filter函数
+11. 提取字典的子集，使用字典推导式
+12. 命名元祖，提高代码的可读性 collections里的nametuple
+
+### 第二章
