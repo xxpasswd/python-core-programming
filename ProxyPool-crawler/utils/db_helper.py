@@ -19,7 +19,7 @@ class DBHelper(object):
         获取所有的ip
         :return:list: [{"ip":"112.112.112.112:3434"}]
         """
-        ip_list = self._table.all()
+        ip_list = self._table.distinct('ip')
         return [item['ip'] for item in ip_list]
 
     def insert_one_ip(self, ip):

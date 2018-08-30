@@ -36,6 +36,9 @@
 3. 数字的格式化输出，使用format函数
 4. 数字间的进制转换，bin，oct，hex，或者format(5,'b'),format(5,'o'),format(5,'x'),转换为10进制int(5,2)
 5. 随机选择，random模块的choice，randint
+6. 时间计算模块datatime模块
+
+## 第四章 迭代器和生成器
 
 
 ### 第十二章 并发编程

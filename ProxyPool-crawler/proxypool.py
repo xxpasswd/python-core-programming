@@ -64,7 +64,7 @@ def process_res(ip_list):
     ip_valid_list = []
     threads = []
     # 创建处理ip结果的线程
-    for i in range(10):
+    for i in range(50):
         threads.append(VerifyIp(ip_list, ip_valid_list))
 
     # 开始所有线程

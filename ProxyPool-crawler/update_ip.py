@@ -14,7 +14,7 @@ def process_res():
     ip_valid_list = []
     threads = []
     # 创建处理ip结果的线程
-    for i in range(10):
+    for i in range(50):
         threads.append(VerifyIp(ip_list, ip_valid_list))
 
     # 开始所有线程
@@ -28,10 +28,10 @@ def process_res():
     for ip in ip_list_copy:
         if ip not in ip_valid_list:
             db.delete_one_ip(ip)
-    print(ip_valid_list)
+    print(ip_valid_list, len(ip_valid_list))
 
 
 if __name__ == '__main__':
-    print('开始更细数据库中有效的代理ip')
+    print('开始更新数据库中有效的代理ip')
     process_res()
     print('更新完成')
