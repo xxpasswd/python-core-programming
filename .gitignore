@@ -8,3 +8,4 @@ wxbot/video.db
 wxbot/*.png
 wxbot/*pkl
 *.db
+log/
