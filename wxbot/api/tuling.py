@@ -8,8 +8,8 @@ class TuLing(object):
     图灵机器人操作集
     """
     tuling_url = 'http://openapi.tuling123.com/openapi/api/v2'
-    apiKey = 'bfc62dd9cb9742f9a9ecd8b04d32e645'
-    userId = 'pf'
+    apiKey = ''
+    userId = ''
 
     def __init__(self):
         pass
