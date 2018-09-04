@@ -40,6 +40,12 @@
 
 ## 第四章 迭代器和生成器
 
+1. 手动迭代，next方法
+2. 让创建的对象能够实现迭代，类里面实现__iter__
+3. 自已定制生成器，比如迭代产生浮点数
+4. 反向迭代使用reversed函数
+5. 可迭代对象切片，使用itertools的islice方法
+6. 排列组合使用itertools的permutations方法和combinations方法
 
 ### 第十二章 并发编程
 1. 启动和停止线程，1通过给Thread的传值。2继承Thread类
