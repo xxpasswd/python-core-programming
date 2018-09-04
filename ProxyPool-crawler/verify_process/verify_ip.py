@@ -11,7 +11,7 @@ class VerifyIp(Thread):
     def __init__(self, ip_list, res):
         super(VerifyIp, self).__init__()
         self.ip_list = ip_list
-        self._res = res
+        self.res = res
 
     def run(self):
         while self.ip_list:
@@ -25,13 +25,9 @@ class VerifyIp(Thread):
         """
         try:
             if self._is_available(ip):
-                self._res.append(ip)
+                self.res.append(ip)
         except:
             return
-
-    @property
-    def res(self):
-        return self._res
 
     @staticmethod
     def _is_available(ip):
