@@ -46,6 +46,10 @@
 4. 反向迭代使用reversed函数
 5. 可迭代对象切片，使用itertools的islice方法
 6. 排列组合使用itertools的permutations方法和combinations方法
+7. 序列上索引值迭代，使用enumerate方法
+8. 同时迭代多个序列，使用zip
+9. 多个序列连续迭代，使用itertools的chain方法
+10. 序列迭代停止，可以给iter传入截止的参数
 
 ### 第十二章 并发编程
 1. 启动和停止线程，1通过给Thread的传值。2继承Thread类
