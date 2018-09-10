@@ -51,6 +51,15 @@
 9. 多个序列连续迭代，使用itertools的chain方法
 10. 序列迭代停止，可以给iter传入截止的参数
 
+## 第五章 文件与IO
+
+1. 打开文件，with open('aa.txt','a+') as f语句
+2. 打印输出重定向到一个文件中去。print('hello', file=f)
+3. 写入文件时，判断文件是否存在，使用open('somefile','xt')
+4. 使用类文件对象，比如你要打开一个文件，就可以创建一个类文件对象来模拟它，io.stringIO()方法
+5. 路径文件名操作，os.path.basename,os.path.dirname,os.path.join
+6. 测试文件是否存在，os.path.exists,os.path.isfile,os.path.isdir
+
 ### 第十二章 并发编程
 1. 启动和停止线程，1通过给Thread的传值。2继承Thread类
 2. 
