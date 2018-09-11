@@ -60,6 +60,14 @@
 5. 路径文件名操作，os.path.basename,os.path.dirname,os.path.join
 6. 测试文件是否存在，os.path.exists,os.path.isfile,os.path.isdir
 
+## 第六章 数据编码和文件处理
+
+1. 读写json数据使用，将字符串转为json，json.loads()，反之，json.dumps()，输出漂亮化，print(json_data,indent=4)，或者from pprint import pprint
+2. 解析xml数据和base64数据
+
+## 第七章 函数
+
+
 ### 第十二章 并发编程
 1. 启动和停止线程，1通过给Thread的传值。2继承Thread类
 2. 
