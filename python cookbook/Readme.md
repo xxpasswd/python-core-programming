@@ -59,6 +59,7 @@
 4. 使用类文件对象，比如你要打开一个文件，就可以创建一个类文件对象来模拟它，io.stringIO()方法
 5. 路径文件名操作，os.path.basename,os.path.dirname,os.path.join
 6. 测试文件是否存在，os.path.exists,os.path.isfile,os.path.isdir
+7. 使用临时文件from tempfile import *
 
 ## 第六章 数据编码和文件处理
 
