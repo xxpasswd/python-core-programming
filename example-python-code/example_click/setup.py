@@ -11,6 +11,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        tools=tools:main
+        tools=tools:cli
     ''',
 )
