@@ -53,10 +53,11 @@
 
 ## 第五章 文件与IO
 
-1. 打开文件，with open('aa.txt','a+') as f语句
-2. 打印输出重定向到一个文件中去。print('hello', file=f)
-3. 写入文件时，判断文件是否存在，使用open('somefile','xt')
-4. 使用类文件对象，比如你要打开一个文件，就可以创建一个类文件对象来模拟它，io.stringIO()方法
+1. 如何读取一个文件？打开方式的区别？
+2. 如何将print的内容定向到文件中？
+3. 如何判断当文件不存在时，才可以写入？
+4. 如何创建一个类文件对象？
+5. 如何迭代固定大小的文件内容？
 5. 路径文件名操作，os.path.basename,os.path.dirname,os.path.join
 6. 测试文件是否存在，os.path.exists,os.path.isfile,os.path.isdir
 7. 使用临时文件from tempfile import *
