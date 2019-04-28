@@ -71,8 +71,22 @@
 
 1. *args接受任意数量的位置参数， **kwargs接受任意数量的关键字参数， *出现在最后一个参数后面， **出现在 *后面
 2. 函数的强制参数，比如 recv(maxsize,*,block=None)
-3. 匿名函数lambda
-4. 减少函数参数的个数，使用functiontools的partial函数，用lambda也可以实现
+3. 不要这样做fun(a,b=[]),正确的做法fun(a,b=None)
+```
+def fun(a,b=None):
+    # if not b是错误的，有可能b是'',False
+    if b is None:
+        b = []
+```
+4. 匿名函数lambda，其中的变量值x是调用的时候获取的，不是定义的时候获取的
+```
+a = lambda y: x+y
+x = 10
+a(10) # 结果 20
+x = 20
+a(10) # 结果 30
+```
+4. 减少函数参数的个数，使用functiontools的partial函数
 5. 想使用额外的环境变量时，可以使用闭包的方法来解决
 6. 回调函数，感觉很有趣，后面可以仔细看一下
 
